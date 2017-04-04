@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="MyHelloWorld" basedir="." default="compile">
+    <description>
+        This is my first ANT project with compile
+    </description>
+
+    <target name="clean">
+        <delete dir="manju"/>
+    </target>
+
+    <target name="compile" depends="clean">
+        <mkdir dir="manju/classes"/>
+        <javac srcdir="src" destdir="manju/classes" includeantruntime="false"/>
+    </target>
+</project>
